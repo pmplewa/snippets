@@ -1,0 +1,29 @@
+The table contains the meteorology measurements related to the period between 2002-01-01 and 2013-12-31 at Paranal.
+Data was extracted from the ESO ambient conditions database by the Database Content Management team at ESO.
+Created on 2014-02-03.
+Contact: archive@eso.org
+
+Description of file:
+
+DATETIME:	Time of measuremet [in UT]
+INTERVAL: 	Time interval between two measurements [seconds]
+TEMP1		Air Temperature at 30m [1/100 deg.C]
+TEMP2		Air Temperature at 2m [1/100 deg.C]
+TEMP3		Ground Temperature at -0.1m [1/100 deg.C]
+TEMPDEW1	Dew Temperature at 30m [1/100 deg.C]
+TEMPDEW2	Dew Temperature at 2m [1/100 deg.C]
+RHUM1		Relative Humidity at 30m [%]
+RHUM2		Relative Humidity at 2m [%]
+PRES		Air Pressure [1/100 hPa]
+PRESQNH		Pressure normalized at sea level [1/100 hPa]
+WIND SPEED1	Wind Speed measured at 30m [1/100 m/s]
+WIND SPEED2	Wind Speed measured at 10m [1/100 m/s]
+WIND DIR1	Wind Direction measured at 30m [deg]
+WIND DIR2	Wind Direction measured at 10m [deg]
+WIND SPEEDU	Wind Speed U vector component at 20m [1/100 m/s]
+WIND SPEEDV	Wind Speed V vector component at 20m [1/100 m/s]
+WIND SPEEDW	Wind Speed W vector component at 20m [1/100 m/s]
+DUS1 		0.5 micron Particule count at 30m [1/100 1/m^3]
+DUL1  		5.0 micron Particule count at 30m [1/100 1/m^3]
+DUS2		0.5 micron Particule count at 20m [1/100 1/m^3]
+DUL2		5.0 micron Particule count at 20m [1/100 1/m^3]

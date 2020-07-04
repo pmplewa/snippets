@@ -1,0 +1,440 @@
+[
+    {
+        "column_number": 1,
+        "name": "smoc_id",
+        "description": "SDSS MOC id",
+        "format": "a6"
+    },
+    {
+        "column_number": 2,
+        "name": "obj_id_run",
+        "description": "first portion of the SDSS object id",
+        "format": "i4"
+    },
+    {
+        "column_number": 3,
+        "name": "obj_id_col",
+        "description": "second portion of the SDSS object id",
+        "format": "i4"
+    },
+    {
+        "column_number": 4,
+        "name": "obj_id_field",
+        "description": "third portion of the SDSS object id",
+        "format": "i4"
+    },
+    {
+        "column_number": 5,
+        "name": "obj_id_obj",
+        "description": "fourth portion of the SDSS object id",
+        "format": "i4"
+    },
+    {
+        "column_number": 6,
+        "name": "obj_row",
+        "description": "pixel row in which object occurs",
+        "format": "f8"
+    },
+    {
+        "column_number": 7,
+        "name": "obj_col",
+        "description": "pixel column in which object occurs",
+        "format": "f8"
+    },
+    {
+        "column_number": 8,
+        "name": "mjd",
+        "description": "Julian Day (TAI)",
+        "unit": "day",
+        "format": "f8"
+    },
+    {
+        "column_number": 9,
+        "name": "ra",
+        "description": "J2000 right ascension",
+        "unit": "degree",
+        "format": "f8"
+    },
+    {
+        "column_number": 10,
+        "name": "dec",
+        "description": "J2000 declination",
+        "unit": "degree",
+        "format": "f8"
+    },
+    {
+        "column_number": 11,
+        "name": "lambda",
+        "description": "J2000 ecliptic longitude",
+        "unit": "degree",
+        "format": "f8"
+    },
+    {
+        "column_number": 12,
+        "name": "beta",
+        "description": "J2000 ecliptic latitude",
+        "unit": "degree",
+        "format": "f8"
+    },
+    {
+        "column_number": 13,
+        "name": "phi",
+        "description": "distance from opposition",
+        "unit": "degree",
+        "format": "f8"
+    },
+    {
+        "column_number": 14,
+        "name": "vmu",
+        "description": "velocity component parallel to the SDSS scanning direction",
+        "unit": "degree_per_day",
+        "format": "f8"
+    },
+    {
+        "column_number": 15,
+        "name": "vmu_err",
+        "description": "error in vmu",
+        "unit": "degree_per_day",
+        "format": "f8"
+    },
+    {
+        "column_number": 16,
+        "name": "vnu",
+        "description": "velocity component perpendicular to the SDSS scanning direction",
+        "unit": "degree_per_day",
+        "format": "f8"
+    },
+    {
+        "column_number": 17,
+        "name": "vnu_err",
+        "description": "error in vnu",
+        "unit": "degree_per_day",
+        "format": "f8"
+    },
+    {
+        "column_number": 18,
+        "name": "vlambda",
+        "description": "velocity component parallel to the ecliptic",
+        "unit": "degree_per_day",
+        "format": "f8"
+    },
+    {
+        "column_number": 19,
+        "name": "vbeta",
+        "description": "velocity component perpendicular to the ecliptic",
+        "unit": "degree_per_day",
+        "format": "f8"
+    },
+    {
+        "column_number": 20,
+        "name": "u_mag",
+        "description": "SDSS u' psf magnitude",
+        "unit": "magnitude",
+        "format": "f8",
+        "missing_constant": 99.99
+    },
+    {
+        "column_number": 21,
+        "name": "u_mag_err",
+        "description": "SDSS u' magnitude error",
+        "unit": "magnitude",
+        "format": "f4",
+        "missing_constant": 9.99
+    },
+    {
+        "column_number": 22,
+        "name": "g_mag",
+        "description": "SDSS g' psf magnitude",
+        "unit": "magnitude",
+        "format": "f8",
+        "missing_constant": 99.99
+    },
+    {
+        "column_number": 23,
+        "name": "g_mag_err",
+        "description": "SDSS g' magnitude error",
+        "unit": "magnitude",
+        "format": "f4",
+        "missing_constant": 9.99
+    },
+    {
+        "column_number": 24,
+        "name": "r_mag",
+        "description": "SDSS r' psf magnitude",
+        "unit": "magnitude",
+        "format": "f8",
+        "missing_constant": 99.99
+    },
+    {
+        "column_number": 25,
+        "name": "r_mag_err",
+        "description": "SDSS r' magnitude error",
+        "unit": "magnitude",
+        "format": "f4",
+        "missing_constant": 9.99
+    },
+    {
+        "column_number": 26,
+        "name": "i_mag",
+        "description": "SDSS i' psf magnitude",
+        "unit": "magnitude",
+        "format": "f8",
+        "missing_constant": 99.99
+    },
+    {
+        "column_number": 27,
+        "name": "i_mag_err",
+        "description": "SDSS i' magnitude error",
+        "unit": "magnitude",
+        "format": "f4",
+        "missing_constant": 9.99
+    },
+    {
+        "column_number": 28,
+        "name": "z_mag",
+        "description": "SDSS z' psf magnitude",
+        "unit": "magnitude",
+        "format": "f8",
+        "missing_constant": 99.99
+    },
+    {
+        "column_number": 29,
+        "name": "z_mag_err",
+        "description": "SDSS z' magnitude error",
+        "unit": "magnitude",
+        "format": "f4",
+        "missing_constant": 9.99
+    },
+    {
+        "column_number": 30,
+        "name": "a_col",
+        "description": "a* color (a*",
+        "unit": "magnitude",
+        "format": "f8",
+        "missing_constant": 99.99
+    },
+    {
+        "column_number": 31,
+        "name": "a_col_err",
+        "description": "a* magnitude error",
+        "unit": "magnitude",
+        "format": "f4",
+        "missing_constant": 9.99
+    },
+    {
+        "column_number": 32,
+        "name": "v_mag",
+        "description": "Johnson v-band magnitude (v",
+        "unit": "magnitude",
+        "format": "f8",
+        "missing_constant": 99.99
+    },
+    {
+        "column_number": 33,
+        "name": "b_mag",
+        "description": "Johnson b-band magnitude synthesized (b",
+        "unit": "magnitude",
+        "format": "f8",
+        "missing_constant": 99.99
+    },
+    {
+        "column_number": 34,
+        "name": "ast_flag",
+        "description": "ASTORB identification",
+        "format": "i4"
+    },
+    {
+        "column_number": 35,
+        "name": "ast_number",
+        "description": "asteroid number",
+        "format": "i8",
+        "missing_constant": 0
+    },
+    {
+        "column_number": 36,
+        "name": "ast_prov_id",
+        "description": "asteroid provisional designation",
+        "format": "a20",
+        "missing_constant": "-"
+    },
+    {
+        "column_number": 37,
+        "name": "ast_det_count",
+        "description": "detection counter",
+        "format": "i4"
+    },
+    {
+        "column_number": 38,
+        "name": "ast_det_total",
+        "description": "total number of observations",
+        "format": "i4"
+    },
+    {
+        "column_number": 39,
+        "name": "ast_flags",
+        "description": "SDSSMOC internal flags",
+        "format": "i8"
+    },    
+    {
+        "column_number": 40,
+        "name": "ra_comp",
+        "description": "predicted right ascension",
+        "unit": "degree",
+        "format": "f8",
+        "missing_constant": -99.999999
+    },
+    {
+        "column_number": 41,
+        "name": "dec_comp",
+        "description": "predicted declination",
+        "unit": "degree",
+        "format": "f8",
+        "missing_constant": -99.999999
+    },
+    {
+        "column_number": 42,
+        "name": "v_mag_comp",
+        "description": "predicted V apparent magnitude",
+        "unit": "magnitude",
+        "format": "f8",
+        "missing_constant": -9.99
+    },
+    {
+        "column_number": 43,
+        "name": "r_helio",
+        "description": "heliocentric distance",
+        "unit": "astronomical_unit",
+        "format": "f8",
+        "missing_constant": 0.000
+    },
+    {
+        "column_number": 44,
+        "name": "r_geo",
+        "description": "geocentric distance",
+        "unit": "astronomical_unit",
+        "format": "f8",
+        "missing_constant": 0.000
+    },
+    {
+        "column_number": 45,
+        "name": "phase",
+        "description": "phase angle",
+        "unit": "degree",
+        "format": "f8",
+        "missing_constant": -9.99
+    },
+    {
+        "column_number": 46,
+        "name": "cat_id_osc",
+        "description": "identification of the catalog for osculating elements",
+        "format": "a19",
+        "missing_constant": "-"
+    },
+    {
+        "column_number": 47,
+        "name": "H",
+        "description": "absolute magnitude",
+        "unit": "magnitude",
+        "format": "f8",
+        "missing_constant": -99.99
+    },
+    {
+        "column_number": 48,
+        "name": "G",
+        "description": "slope parameter",
+        "format": "f4",
+        "missing_constant": -0.99
+    },
+    {
+        "column_number": 49,
+        "name": "arc",
+        "description": "arc of observations",
+        "unit": "day",
+        "format": "i4",
+        "missing_constant": 0
+    },
+    {
+        "column_number": 50,
+        "name": "epoch_osc",
+        "description": "epoch of the osculating elements",
+        "unit": "day",
+        "format": "f8",
+        "missing_constant": 0.000000
+    },
+    {
+        "column_number": 51,
+        "name": "a_osc",
+        "description": "semi-major axis",
+        "unit": "astronomical_unit",
+        "format": "f8",
+        "missing_constant": 0.00000000
+    },
+    {
+        "column_number": 52,
+        "name": "e_osc",
+        "description": "eccentricity",
+        "format": "f8",
+        "missing_constant": -0.99999999
+    },
+    {
+        "column_number": 53,
+        "name": "i_osc",
+        "description": "inclination",
+        "unit": "degree",
+        "format": "f8",
+        "missing_constant": -99.999999
+    },
+    {
+        "column_number": 54,
+        "name": "Omega_osc",
+        "description": "longitude of the ascending node",
+        "unit": "degree",
+        "format": "f8",
+        "missing_constant": -99.999999
+    },
+    {
+        "column_number": 55,
+        "name": "omega_osc",
+        "description": "argument of perihelion",
+        "unit": "degree",
+        "format": "f8",
+        "missing_constant": -99.999999
+    },
+    {
+        "column_number": 56,
+        "name": "M_osc",
+        "description": "mean anomaly",
+        "unit": "degree",
+        "format": "f8",
+        "missing_constant": -99.999999
+    },
+    {
+        "column_number": 57,
+        "name": "cat_id_prop",
+        "description": "identification of the catalog for proper elements",
+        "format": "a20",
+        "missing_constant": "-"
+    },
+    {
+        "column_number": 58,
+        "name": "a_prop",
+        "description": "proper semi-major axis",
+        "unit": "astronomical_unit",
+        "format": "f8",
+        "missing_constant": 0.00000000
+    },
+    {
+        "column_number": 59,
+        "name": "e_prop",
+        "description": "proper eccentricity",
+        "format": "f8",
+        "missing_constant": 0.00000000
+    },
+    {
+        "column_number": 60,
+        "name": "sini_prop",
+        "description": "proper sine of inclination",
+        "format": "f8",
+        "missing_constant": 0.000000
+    }
+]

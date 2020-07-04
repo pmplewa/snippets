@@ -1,0 +1,16 @@
+The table contains DIMM measurements related to the period between 2002-01-01 and 2013-12-31 at Paranal.
+Data was extracted from the ESO ambient conditions database by the Database Content Management team at ESO.
+Created on 2014-02-03.
+Contact: archive@eso.org
+
+Description of file:
+
+DATETIME:	in UT
+INTERVAL: 	Time interval between two measurements [seconds]
+DIMM-SEEING: 	Seeing as measured by the ASM-DIMM telescope, FWHM at 500nm [1/100 arcsec]
+RA: 		Right Ascension at which the ASM-DIMM telescope measures the site seeing [milliarcsec]
+DEC: 		Declination at which the ASM-DIMM telescope measures the site seeing [milliarcsec]
+DIMM-AIRMASS: 	Airmass of target star [1/100]
+TAU:		[1/1000 ms]
+REL-FLUX-RMS:	Relaltive flux rms [1/100000.]
+TETA0:		[1/100 arcsec]
