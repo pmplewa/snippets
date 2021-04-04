@@ -1,5 +1,4 @@
 * [Paranal Observatory Ambient Conditions](AstroWeather/example.ipynb)
-* [S2 Orbit Fitting with Rebound and MulitNest (C Version)](GC-OrbitFitC)
 * [Parallax & Proper Motion](Parallax/example.ipynb)
 * [Asteroid Families](SDSSMOC/example.ipynb)
 * [Shapelets (PSF Fitting)](Shapelets/example.ipynb)
