@@ -106,7 +106,7 @@ def load_data(path_to_dimm_data, path_to_meteo_data, freq="20T"):
         return df.dropna()
 
     # interpolate measurements to 20-min intervals, per night
-    day = pd.Grouper(freq="24H", key="LocalTime", base=12)
+    day = pd.Grouper(freq="24H", key="LocalTime", offset="12H")
     data = tz_localize(pd.concat([reduce(ts, group.drop("LocalTime", axis=1))
       for ts, group in tz_localize(data).groupby(day)]))
 

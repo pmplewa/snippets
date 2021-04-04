@@ -17,7 +17,7 @@ def plot_monthly_seeing(data, **kwargs):
     for i, (ts, group) in enumerate(df):
         if ts.month == 1:
             ticks.append([i, ts.year])
-        med_seeing.append(group.median())
+        med_seeing.append(group.median(numeric_only=False))
         ax.boxplot(
             x=group["Seeing"],
             positions=[i],
