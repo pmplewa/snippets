@@ -25,7 +25,7 @@ struct point {
   double x_err;
   double y; // angular offset along DEC
   double y_err;
-  double vz; // radial velocity 
+  double vz; // radial velocity
   double vz_err;
   int type;
 };
@@ -85,7 +85,7 @@ int main(int argc, char* argv[]) {
 
   // define natural constants (in the internal units)
   gravitational_constant_times_R03 = 6.67408E-8 * m_unit*pow(t_unit, 2)/pow(l_unit, 3);
-  speed_of_light_times_R0 = 29979245800. * t_unit/l_unit;  
+  speed_of_light_times_R0 = 29979245800. * t_unit/l_unit;
 
   // run MultiNest
   run(flag_imp, flag_mode_sep, flag_const_eff, n_live, tol, eff, n_dims, n_pars,
@@ -106,14 +106,14 @@ void loglike(double *cube, int *n_dims, int *n_pars, double *new_value, void *co
   double gravitational_constant = gravitational_constant_times_R03/pow(R0, 3);
   double speed_of_light = speed_of_light_times_R0/R0;
   double velocity_conversion_factor = velocity_conversion_factor_per_R0*R0;
-  
+
   double a = prior_uniform(cube[2], 0.10, 0.15); // semi-major axis
   double e = prior_uniform(cube[3], 0.87, 0.90); // eccentricity
   double inc = prior_uniform(cube[4], 2.3, 2.5); // inclination
   double Omega = prior_uniform(cube[5], 3.9, 4.1); // longiture of asc. node
   double omega = prior_uniform(cube[6], 1.0, 1.2); // argument of pericenter
   double tp = prior_uniform(cube[7], 2002.1, 2002.5); // time of pericenter
-  
+
   // coordinate system parameters
   double x0 = prior_uniform(cube[8], -5E-3, 5E-3);
   double y0 = prior_uniform(cube[9], -5E-3, 5E-3);
@@ -171,7 +171,7 @@ void loglike(double *cube, int *n_dims, int *n_pars, double *new_value, void *co
       // convert to the coordinate system of the observations
       double x_pred = -p->y;
       double y_pred = p->x;
-  
+
       // account for a possible drift of the astrometric reference frame
       x_pred += x0 + vx0 * (r->t - 2000.);
       y_pred += y0 + vy0 * (r->t - 2000.);
@@ -190,14 +190,14 @@ void loglike(double *cube, int *n_dims, int *n_pars, double *new_value, void *co
 
       // account for the gravitational redshift
       double rs = 2.*sim->G*bh->m/pow(speed_of_light, 2);
-      double zG = 1./sqrt(1. - rs/sqrt(pow(p->x, 2) + pow(p->y, 2) + pow(p->z, 2))) - 1.;      
+      double zG = 1./sqrt(1. - rs/sqrt(pow(p->x, 2) + pow(p->y, 2) + pow(p->z, 2))) - 1.;
 
       // calculate the measured radial velocity
       double vz_pred = (zD + zG) * speed_of_light;
 
       // convert to observed units
       vz_pred *= velocity_conversion_factor;
-      
+
       // account for a possible radial velocity offset
       vz_pred += vz0;
 

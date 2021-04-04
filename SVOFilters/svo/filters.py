@@ -117,7 +117,7 @@ class Filter():
     @property
     def λ(self):
         return self.transmission_table["Wavelength"]
-    
+
     @property
     def T(self):
         return self.transmission_table["Transmission"]

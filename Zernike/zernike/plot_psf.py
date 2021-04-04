@@ -14,24 +14,24 @@ def plot_psf(n_grid=5, figsize=(10, 10)):
     j = 0
     for k in range(n_grid):
         for l in range(n_grid):
-            ax = ax_list[k, l]   
+            ax = ax_list[k, l]
             ax.set_aspect("equal")
             ax.set_xticks([])
-            ax.set_yticks([])            
+            ax.set_yticks([])
             if k >= l:
                 cj = np.zeros(j+1)
                 cj[j] = 1
 
                 image = gen_psf(cj, norm=False)
-                
+
                 ax.imshow(image, origin="lower", cmap="Greys", norm=norm)
-                
+
                 n, m = index(j)
                 ax.set_title(f"j={j} ({n}, {m})")
-                
+
                 j += 1
             else:
                 ax.axis("off")
-    
+
     plt.tight_layout()
     plt.show()

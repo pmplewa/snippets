@@ -20,5 +20,5 @@ def gen_psf(cj, λ=0.1, n_pix=500, **kwargs):
 
     wf = eval_zernike(x, y, cj, **kwargs)
     wf = ma.array(wf, mask=mask, fill_value=0)
-    
+
     return otf_to_psf(np.exp(1j * np.pi * wf).filled())

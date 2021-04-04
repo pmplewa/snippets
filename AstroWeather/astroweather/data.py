@@ -7,7 +7,7 @@ def load_dimm_data(path):
     # import DIMM measurements from archive dump
     dimm_data = pd.read_csv(
         filepath_or_buffer=path,
-        encoding="utf-8-sig",                   
+        encoding="utf-8-sig",
         header=None,
         index_col=0,
         parse_dates=True,
@@ -21,11 +21,11 @@ def load_dimm_data(path):
             "Tau",
             "RelFluxRMS",
             "Theta"])
-    
+
     # not needed
     dimm_data.drop("Interval", axis=1, inplace=True)
     dimm_data.drop(["Ra", "Dec"], axis=1, inplace=True)
-    
+
     # convert units
     dimm_data["Seeing"] /= 100
     dimm_data["Airmass"] /= 100
@@ -39,7 +39,7 @@ def load_meteo_data(path):
     # import meteorology measurements from archive dump
     meteo_data = pd.read_csv(
         filepath_or_buffer=path,
-        encoding="utf-8-sig",                   
+        encoding="utf-8-sig",
         header=None,
         index_col=0,
         parse_dates=True,
@@ -66,9 +66,9 @@ def load_meteo_data(path):
             "DUL1",
             "DUS2",
             "DUL2"])
-    
+
     meteo_data.drop_duplicates(inplace=True)
-    
+
     # not needed
     meteo_data.drop("Interval", axis=1, inplace=True)
     meteo_data.drop("PresQNH", axis=1, inplace=True)
@@ -76,7 +76,7 @@ def load_meteo_data(path):
     meteo_data.drop(["WindDir1", "WindDir2"], axis=1, inplace=True)
     meteo_data.drop(["DUS1", "DUS2"], axis=1, inplace=True)
     meteo_data.drop(["DUL1", "DUL2"], axis=1, inplace=True)
-    
+
     # convert units
     meteo_data[["Temp1", "Temp2", "Temp3"]] /= 100
     meteo_data[["TempDew1", "TempDew2"]] /= 100
