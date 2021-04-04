@@ -74,9 +74,6 @@ class Filter():
         for param in table.params:
             param_value = param.value
 
-            if param.datatype == "char":
-                param_value = param_value.decode("UTF-8")
-
             if param.unit is not None:
                 param_value *= param.unit
 
