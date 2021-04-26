@@ -4,4 +4,5 @@
 # data files
 AstroWeather/dimm_paranal.csv.gz
 AstroWeather/meteo_paranal.csv.gz
+PlanckMap/*.fits
 SDSSMOC/ADR4.dat

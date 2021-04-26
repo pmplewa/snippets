@@ -1,6 +1,7 @@
 * [Paranal Observatory Ambient Conditions](AstroWeather/example.ipynb)
 * [Bayesian Optimization with George](BayesOpt/example.ipynb)
 * [Parallax & Proper Motion](Parallax/example.ipynb)
+* [The Planck CMB (perceptually uniform)](PlanckMap/example.ipynb)
 * [Asteroid Families](SDSSMOC/example.ipynb)
 * [Shapelets (PSF Fitting)](Shapelets/example.ipynb)
 * [SVO Filter Service](SVOFilters/example.ipynb)
